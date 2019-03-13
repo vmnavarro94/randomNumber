@@ -31,8 +31,8 @@ function randomNumber(n)
 		});
 		
 		randomN = parseInt(randomBinary.toString().replace(/,/g, ''), 2);
-	//Since the binary lenght is the same, we cannot have numbers greater than n, so we validate that is not equal
-	}while(randomN == n);
+	//We validate that the number is less than n
+	}while(randomN >= n);
 
 	 return randomN;
 }
